@@ -606,7 +606,7 @@ class ScaleTest extends TestBase implements ITestBaseIsolated {
                 .getEnv();
         List<EnvVar> updatedEnvVars = new ArrayList<EnvVar>(envVars);
         updatedEnvVars.add(new EnvVarBuilder().withName("_JAVA_OPTIONS").withValue("-verbose:gc").build());
-
+/*
         kubernetes.getClient().apps()
                 .deployments()
                 .inNamespace(kubernetes.getInfraNamespace())
@@ -622,6 +622,7 @@ class ScaleTest extends TestBase implements ITestBaseIsolated {
                         .endTemplate()
                         .endSpec()
                         .build());
+*/
     }
 
     private void appendAddress(Address... addresses) throws InterruptedException {
