@@ -212,7 +212,7 @@ public class ScaleTestManager {
 
                         if (client.getAddressesType() == null) {
                             deliveriesChecker.accept(AddressType.ANYCAST);
-                            deliveriesChecker.accept(AddressType.QUEUE);
+//                             deliveriesChecker.accept(AddressType.QUEUE);
                         } else {
                             deliveriesChecker.accept(client.getAddressesType());
                         }
@@ -229,7 +229,7 @@ public class ScaleTestManager {
                         };
                         if (client.getAddressesType() == null) {
                             deliveriesPredicate.accept(AddressType.ANYCAST);
-                            deliveriesPredicate.accept(AddressType.QUEUE);
+//                             deliveriesPredicate.accept(AddressType.QUEUE);
                         } else {
                             deliveriesPredicate.accept(client.getAddressesType());
                         }
