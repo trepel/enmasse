@@ -188,7 +188,7 @@ public class ScaleTestManager {
                         };
                         if (client.getAddressesType() == null) {
                             dataWait.accept(AddressType.ANYCAST);
-                            dataWait.accept(AddressType.QUEUE);
+//                             dataWait.accept(AddressType.QUEUE);
                         } else {
                             dataWait.accept(client.getAddressesType());
                         }
